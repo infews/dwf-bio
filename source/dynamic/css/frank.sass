@@ -1,0 +1,53 @@
+@import 'compass'
+@import "compass/css3/box"
+@import "compass/css3/gradient"
+@import "compass/css3/border-radius"
+
+body
+
+  @include display-box
+  @include box-orient(horizontal)
+  @include box-align(stretch)
+
+  display: box
+  box-orient: horizontal
+
+  margin: 0
+
+  background-color: #eee
+  font-family: 'Droid Serif', serif
+  text-shadow: #fff 1px 1px 0
+
+
+  h1, h2, h3
+    font-family: 'Oswald', sans-serif
+    font-weight: normal
+  h1
+    text-shadow: none
+
+  a
+    text-decoration: none
+
+  .left
+    background-color: #454545
+
+    color: white
+    width: 200px
+    padding: 14px
+    color: white
+    h1
+      font-size: 24px
+
+    .avatar
+      img
+        @include border-radius(12px)
+
+  .content
+    @include box-flex(1)
+    padding: 14px
+    color: black
+    box-flex: 1
+
+  .footer
+    color: #999
+    font-size: .8em

@@ -6,6 +6,8 @@ GEM
       mime-types
       xml-simple
     builder (3.0.0)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     daemons (1.0.10)
     frank (1.0.8)
       haml (>= 3.0)
@@ -24,6 +26,7 @@ GEM
       net-ssh (>= 1.99.1)
     net-ssh (2.1.0)
     rack (1.2.1)
+    rdiscount (1.6.8)
     tilt (0.9)
     xml-simple (1.0.14)
 
@@ -32,4 +35,6 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
+  compass
   frank
+  rdiscount
