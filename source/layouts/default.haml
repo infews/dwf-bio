@@ -5,11 +5,12 @@
     %link{:rel =>'stylesheet', :type=>'text/css', :href=>'/css/frank.css'}
     %link{:href => "http://fonts.googleapis.com/css?family=Oswald:regular", :rel => "stylesheet", :type => "text/css"}
     %link{:href => 'http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic', :rel => 'stylesheet', :type => 'text/css'}
-    %script{:type=>'text/javascript', :src=>'/js/frank.js'}
   %body
-    .left
-      %h1 DAVIS W. FRANK
-      .avatar
-        %img{:src => "images/dwf_small.jpg"}
-    .content
-      = yield
+    .fill
+      .content
+        .left
+          %h1 DAVIS W. FRANK
+          .avatar
+            %img{:src => "images/dwf_small.jpg"}
+        .copy
+          = yield

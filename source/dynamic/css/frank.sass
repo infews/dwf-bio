@@ -4,29 +4,33 @@
 @import "compass/css3/border-radius"
 
 body
-
   @include display-box
-  @include box-orient(horizontal)
+  @include box-orient(veritcal)
   @include box-align(stretch)
-
-  display: box
-  box-orient: horizontal
-
   margin: 0
-
   background-color: #eee
   font-family: 'Droid Serif', serif
-  text-shadow: #fff 1px 1px 0
 
+  .fill
+    @include display-box
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+  .content
+    @include display-box
+    @include box-orient(horizontal)
+    @include box-align(stretch)
+
+    text-shadow: #fff 1px 1px 0
 
   h1, h2, h3
     font-family: 'Oswald', sans-serif
     font-weight: normal
   h1
     text-shadow: none
-
-  a
-    text-decoration: none
 
   .left
     background-color: #454545
@@ -35,6 +39,7 @@ body
     width: 200px
     padding: 14px
     color: white
+
     h1
       font-size: 24px
 
@@ -42,11 +47,10 @@ body
       img
         @include border-radius(12px)
 
-  .content
+  .copy
     @include box-flex(1)
-    padding: 14px
+    padding: 8px 14px
     color: black
-    box-flex: 1
 
   .footer
     color: #999
