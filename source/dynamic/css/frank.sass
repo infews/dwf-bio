@@ -2,6 +2,7 @@
 @import "compass/css3/box"
 @import "compass/css3/gradient"
 @import "compass/css3/border-radius"
+@import "compass/css3/box-shadow"
 
 body
   @include display-box
@@ -10,6 +11,9 @@ body
   margin: 0
   background-color: #eee
   font-family: 'Droid Serif', serif
+
+  a
+    text-decoration: none
 
   .fill
     @include display-box
@@ -33,7 +37,7 @@ body
     text-shadow: none
 
   .left
-    background-color: #454545
+    background-color: #525252
 
     color: white
     width: 200px
@@ -49,8 +53,18 @@ body
 
   .copy
     @include box-flex(1)
+    @include box-shadow(#222, -3px, 0, 8px)
     padding: 8px 14px
     color: black
+
+    //-webkit-box-shadow: -3px 0 8px #252525
+
+    h2
+      -webkit-margin-after: 0.2em
+
+    ul
+      -webkit-margin-before: 0.5em
+      list-style-type: circle
 
   .footer
     color: #999
