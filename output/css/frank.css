@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 6, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 7, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body {
   display: -moz-box;
   display: -webkit-box;
@@ -14,7 +14,11 @@ body {
   background-color: #eeeeee;
   font-family: "Droid Serif", serif;
 }
-/* line 14, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 15, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+body a {
+  text-decoration: none;
+}
+/* line 18, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body .fill {
   display: -moz-box;
   display: -webkit-box;
@@ -25,7 +29,7 @@ body .fill {
   bottom: 0;
   right: 0;
 }
-/* line 22, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 26, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body .content {
   display: -moz-box;
   display: -webkit-box;
@@ -38,28 +42,28 @@ body .content {
   box-align: stretch;
   text-shadow: white 1px 1px 0;
 }
-/* line 29, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 33, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body h1, body h2, body h3 {
   font-family: "Oswald", sans-serif;
   font-weight: normal;
 }
-/* line 32, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 36, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body h1 {
   text-shadow: none;
 }
-/* line 35, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 39, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body .left {
-  background-color: #454545;
+  background-color: #525252;
   color: white;
   width: 200px;
   padding: 14px;
   color: white;
 }
-/* line 43, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 47, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body .left h1 {
   font-size: 24px;
 }
-/* line 47, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 51, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body .left .avatar img {
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -68,21 +72,30 @@ body .left .avatar img {
   -khtml-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 50, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 54, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body .copy {
   -moz-box-flex: 1;
   -webkit-box-flex: 1;
   box-flex: 1;
   display: block;
+  -moz-box-shadow: #222222 -3px 0 8px 0;
+  -webkit-box-shadow: #222222 -3px 0 8px 0;
+  -o-box-shadow: #222222 -3px 0 8px 0;
+  box-shadow: #222222 -3px 0 8px 0;
   padding: 8px 14px;
   color: black;
 }
-/* line 55, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+/* line 62, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+body .copy h2 {
+  -webkit-margin-after: 0.2em;
+}
+/* line 65, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
+body .copy ul {
+  -webkit-margin-before: 0.5em;
+  list-style-type: circle;
+}
+/* line 69, /Users/dwf/workspace/infews/bio/source/dynamic/css/frank.sass */
 body .footer {
   color: #999999;
   font-size: 0.8em;
-}
-
-body ul {
-  list-style-type: ;
 }
