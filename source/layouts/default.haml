@@ -2,14 +2,18 @@
 %html
   %head
     %title Davis W. Frank
-    %link{:rel =>'stylesheet', :type=>'text/css', :href=>'/css/frank.css'}
-    %link{:href => "http://fonts.googleapis.com/css?family=Oswald:regular&family=Droid+Serif:regular,italic,bold,bolditalic", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => '/css/frank.css',
+          :rel =>'stylesheet',
+          :type=>'text/css'}
+    %link{:href => "http://fonts.googleapis.com/css?family=Oswald:regular&family=Droid+Serif:regular,italic,bold,bolditalic",
+          :rel => "stylesheet",
+          :type => "text/css"}
   %body
     .fill
       .content
         .left
           %h1 DAVIS W. FRANK
           .avatar
-            %img{:src => "images/dwf_small.jpg"}
+            .img
         .copy
           = yield

@@ -1,4 +1,5 @@
 @import 'compass'
+@import "compass/reset"
 @import "compass/css3/box"
 @import "compass/css3/gradient"
 @import "compass/css3/border-radius"
@@ -11,6 +12,7 @@ body
   margin: 0
   background-color: #eee
   font-family: 'Droid Serif', serif
+  font-size: 16px
 
   a
     text-decoration: none
@@ -30,26 +32,31 @@ body
 
     text-shadow: #fff 1px 1px 0
 
-  h1, h2, h3
+  h1, h2
     font-family: 'Oswald', sans-serif
     font-weight: normal
   h1
-    text-shadow: none
+    font-size: 1.5em
+  h2
+    font-size: 1.2em
 
   .left
     background-color: #525252
 
-    color: white
-    width: 200px
     padding: 14px
+    width: 200px
     color: white
 
     h1
-      font-size: 24px
+      text-shadow: none
+      margin-bottom: 0.5em
 
     .avatar
-      img
+      .img
         @include border-radius(12px)
+        background-image: url(../images/dwf_small.jpg)
+        width: 200px
+        height: 187px
 
   .copy
     @include box-flex(1)
@@ -57,15 +64,18 @@ body
     padding: 8px 14px
     color: black
 
-    //-webkit-box-shadow: -3px 0 8px #252525
-
     h2
-      -webkit-margin-after: 0.2em
+      margin: 1.2em 0 0.6em 0
+
+    p
+      margin: 0.5em 0 1.5em 0
 
     ul
-      -webkit-margin-before: 0.5em
+      margin: 0.2em 0 0 2em
       list-style-type: circle
 
-  .footer
-    color: #999
-    font-size: .8em
+    .footer
+      margin-top: 3em
+      color: #999
+      font-size: .8em
+
