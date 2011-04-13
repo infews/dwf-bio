@@ -1,5 +1,7 @@
 require 'aws/s3'
 
+require 'keys'
+
 desc "Build the website"
 task :build => :clear do
   Dir.chdir('source') do
@@ -16,8 +18,7 @@ end
 desc "Copy files to S3"
 task :deploy => :build do
 
-  AWS::S3::Base.establish_connection!(:access_key_id     => "0124C8E5VGPVEVHH0J02",
-                                      :secret_access_key => "k/Ph58dw5FNwhKc6wKFNNKDYbGYQDGsWEZdAVoTY")
+  AWS::S3::Base.establish_connection!(keys)
 
   buckets = AWS::S3::Service.buckets
   buckets.each {|b| b.delete_all if b.name == bucket_name}
@@ -32,8 +33,7 @@ end
 
 desc "List all current buckets"
 task :buckets do
-  AWS::S3::Base.establish_connection!(:access_key_id     => "0124C8E5VGPVEVHH0J02",
-                                      :secret_access_key => "k/Ph58dw5FNwhKc6wKFNNKDYbGYQDGsWEZdAVoTY")
+  AWS::S3::Base.establish_connection!(keys)
 
   AWS::S3::Service.buckets.each {|b| puts b.name}
 end
