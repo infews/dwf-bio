@@ -1,6 +1,6 @@
 require 'aws/s3'
 
-require 'keys'
+require './keys'
 
 desc "Build the website"
 task :build => :clear do
